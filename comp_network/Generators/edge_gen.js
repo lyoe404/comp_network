@@ -26,11 +26,11 @@ export function edge_gen(rootId, destId, size) {
 
     // Çizgi oluştur
     var edge = document.createElement("div");
-    edge.id = `edge${rootNode.node_id + destNode.node_id}`; 
+    edge.id = `edge${rootNode.node_id + destNode.node_id}`; // değiştirilecek bu şuanlık edge idsi 
     edgeList.push(edge.id);
     edge.className = "edges";   
     // Başlangıç noktası
-    const x1 = rootNode.nodeLeft + 7 ;
+    const x1 = rootNode.nodeLeft + 7 ; // offset çekiyoruz css üzerinde .edges classındaki width height yarısı
     const y1 = rootNode.nodeTop + 7 ;
     const x2 = destNode.nodeLeft + 7 ;
     const y2 = destNode.nodeTop + 7 ;
@@ -48,6 +48,8 @@ export function edge_gen(rootId, destId, size) {
 
     rootNode.node_neighbours.push(destNode.node_id);
     destNode.node_neighbours.push(rootNode.node_id);
+    rootNode.node_connections.push(edge.id);
+    destNode.node_connections.push(edge.id);
     // DOM'a ekle
     document.getElementById("node_area").appendChild(edge);
 }
