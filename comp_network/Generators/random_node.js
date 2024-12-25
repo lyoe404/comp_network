@@ -21,7 +21,7 @@ export function graphGenerator(node_count) {
           node_neighbours : [] , 
           nodeLeft : xCoordinate, 
           nodeTop : yCoordinate, 
-          node_connections : `${null}`,
+          node_connections : [] ,
           visited : false 
         });
         
