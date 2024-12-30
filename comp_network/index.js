@@ -20,4 +20,8 @@ document.getElementById("graphGenerator").addEventListener('click', () => {
         }
        
       ) ; 
+document.getElementById("kruskal").addEventListener('click', () => {
+          console.log("kruskal uygulandı");
+        }
+      ) ;
 

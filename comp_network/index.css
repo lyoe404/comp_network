@@ -13,10 +13,12 @@ body{
 #tool_bar{
   background-color: black;
   height: 100%;
-  width: 10%;
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 #main_div{
   background-color: rgb(115, 115, 99);
@@ -30,6 +32,12 @@ body{
   background-color: white;
   width: 10%;
   width: 90%;
+}
+#kruskal{
+  background-color: white;
+  width: 10%;
+  width: 90%;
+
 }
 #node_area{
   background-color: red;
