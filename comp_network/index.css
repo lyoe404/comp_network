@@ -31,13 +31,27 @@ body{
 #graphGenerator{
   background-color: white;
   width: 10%;
-  width: 90%;
+  width: 70%;
 }
 #kruskal{
   background-color: white;
   width: 10%;
-  width: 90%;
-
+  width: 70%;
+}
+#sizeInput{
+  background-color: white;
+  width: 10%;
+  width: 85%;
+}
+#startNode{
+  background-color: white;
+  width: 10%;
+  width: 85%;
+}
+#endNode{
+  background-color: white;
+  width: 10%;
+  width: 85%;
 }
 #node_area{
   background-color: red;

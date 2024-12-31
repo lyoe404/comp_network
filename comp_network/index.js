@@ -2,8 +2,12 @@
 import * as graphGenerator from './Generators/random_node.js' 
 import * as endosrenyl from './Generators/erdos-renyi.js'
 import * as genedge from './Generators/edge_gen.js'
-let size = 12 ; 
+import * as kruskal from './Algorithms/kruskal.js'
 document.getElementById("graphGenerator").addEventListener('click', () => {
+          let size = document.getElementById("sizeInput").value;
+          if (size === "") {
+            size = 2;
+          }
           graphGenerator.graphGenerator(size) ; // GRAPHGENERATOR BY ENTERING SIZE(BEYLER BURDA SIZE YAZIYOR SIZEYI YUKARDAN DEGİSTİRİP DENEYEBİLİRSİNİZ)
           
           endosrenyl.erdosRenylModel() ; // endos-renyi not completed
@@ -22,6 +26,8 @@ document.getElementById("graphGenerator").addEventListener('click', () => {
       ) ; 
 document.getElementById("kruskal").addEventListener('click', () => {
           console.log("kruskal uygulandı");
+          //kruskal.kruskalAlgorithm();
+
         }
       ) ;
 
