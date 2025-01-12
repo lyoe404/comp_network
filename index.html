@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+<link rel = "stylesheet" href = "style.css">
+</head>
+
+
+<body>
+    <div id = "tool_bar">
+        <input type = "text" id = "node_count" placeholder="node_count def=30">
+        <button id = "graphGenerator"> Generate</button>
+        <div id = "func_params"><select id = "type" >
+            <option id = "endosrenyl" >Endos</option>
+            <option id = "barabasi" >Barabasi</option>
+        </select>
+        <input type = "number" id = "params" placeholder="range 0-1"> 
+    </div>
+            <div id = "paint_area">
+                <button id = "paint">Çiz</button>
+            </div>
+
+            <div id = "calculater_func">
+                    <input type = "number" id = "startNode" class = "inputs" placeholder="startNode">
+                    <input type = "number" id = "destNode" class = "inputs" placeholder="destNode">
+            </div>
+            <button id = "calculate">Hesapla</button>
+
+
+    </div>
+    <div id = "main_div">
+        <div id = "node_area">
+            
+        </div>
+
+    </div>
+
+    
+
+
+      <script src = "script.js" type = "module"></script>
+</body>
+
+
+
+
+
+
+
+</html>
